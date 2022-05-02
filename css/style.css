@@ -10,13 +10,18 @@ img{
 }
 
  /* GENERIC */ 
+body{
+  font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
 }
 
 header {
-  font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  
   background-color: #ff6800;
   color: white;
   height: 70px;
@@ -26,7 +31,8 @@ header {
   left: 0;
   border-bottom: 2px solid #9e9e9e;
   box-shadow: 0px 0px 10px #9e9e9e;
-  
+
+  z-index: 2;
 }
 
 header a{
@@ -44,6 +50,11 @@ ul {
   display: flex;
   align-items: center;
   height: 100%;
+}
+
+.flex-col{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* HEADER */
@@ -75,5 +86,82 @@ ul {
 }
 
 /* MAIN */
+main {
+  margin-top: 130px;
+}
 
+.col{
+  width: calc(100% / 3);
+}
 
+.card{
+  position: relative;
+ padding: 8px;
+}
+
+/* Img */
+.hover-effect{
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.hover-effect img.img-hover{
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.hover-effect:hover img.img-hover{
+  opacity: 1;
+}
+
+.img-tag{
+  position: absolute;
+  color: white;
+  left: 8px;
+  bottom: 120px;
+}
+
+.img-tag span{ 
+  padding: 5px 5px;
+}
+
+.heart{
+  background-color: white;
+  font-size: 40px;
+  color: black;
+  position: absolute;
+  right: 8px;
+  top: 20px;
+  padding: 5px 15px;
+}
+
+h3{
+  font-weight: 100;
+  font-size: 17px;
+}
+
+h2{
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+/* Color */
+.bg-red{
+ background-color: red;
+}
+
+.bg-green{
+  background-color: green;
+}
+
+.color-red{
+  color: red;
+  font-weight: 600;
+}
+
+.text-canceld{
+  text-decoration: line-through;
+}
