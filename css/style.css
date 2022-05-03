@@ -142,8 +142,8 @@ main {
 .img-tag{
   position: absolute;
   color: white;
-  left: 8px;
-  bottom: 120px;
+  left: 0px;
+  bottom: 50px;
 }
 
 .img-tag span{ 
