@@ -118,7 +118,7 @@ main {
 
 .card{
   position: relative;
- padding: 8px;
+  padding: 8px;
 }
 
 /* Img */
@@ -158,6 +158,10 @@ main {
   right: 8px;
   top: 20px;
   padding: 5px 15px;
+}
+
+.heart:hover{
+  color: red;
 }
 
 .card h3{
